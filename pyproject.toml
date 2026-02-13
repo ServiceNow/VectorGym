@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vectorgym"
+version = "1.0"
+description = "VectorGym: A Multi-Task Benchmark for SVG Code Generation and Manipulation"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.30.0",
+    "datasets>=2.14.0",
+    "vllm>=0.2.0",
+    "svgpathtools>=1.5.1",
+    "cairosvg>=2.7.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=4.9.2",
+    "pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "scikit-image>=0.21.0",
+    "lpips>=0.1.4",
+    "requests>=2.31.0",
+    "openai>=1.0.0",
+    "omegaconf>=2.3.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "wandb>=0.15.0",
+    "clip",
+    "torchmetrics"
+]
+
+[project.urls]
+"Homepage" = "https://starvector.github.io/vector-gym"
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
