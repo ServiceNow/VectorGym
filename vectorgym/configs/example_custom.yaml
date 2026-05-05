@@ -1,0 +1,46 @@
+# Example custom configuration for experiments
+# Use with: python -m vectorgym.cli config=vectorgym/configs/example_custom.yaml
+
+# Required: Task and backend
+task: text2svg
+backend: openrouter
+model_name: gpt-4o
+
+# Run configuration
+run:
+  project_name: "my-custom-experiment"
+  out_dir: "./results/my_experiment"
+  report_to: wandb
+  log_images: true
+
+# Dataset configuration
+dataset:
+  dataset_name: /home/juan/datasets/vector_gym_full
+  config_name: null
+  split: test
+  num_samples: 100
+  batch_size: 1  # Required for openrouter
+  num_workers: 1
+  rasterize_size: 512
+  render_size: 512
+
+# Generation parameters
+generation_params:
+  max_length: 2048
+  num_generations: 1
+  temperature: 0.7  # Custom temperature
+
+# Metrics configuration
+metrics:
+  CLIPScore: true
+  VLMJudge: true
+  CountTokenLength: true
+  GenerationTime: true
+  ratio_post_processed: true
+  ratio_non_compiling: true
+  # Disable others for faster evaluation
+  L2: false
+  LPIPS: false
+  SSIM: false
+  DinoScore: false
+

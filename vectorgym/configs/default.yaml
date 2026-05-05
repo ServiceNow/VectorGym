@@ -1,0 +1,38 @@
+# Default configuration for VectorGym
+# Most settings can be overridden via CLI
+
+# General configuration
+run:
+  project_name: "vectorgym-eval"
+  out_dir: "./results"  # Default output directory
+  report_to: wandb
+  log_images: true
+
+# Dataset configuration
+dataset:
+  dataset_name: ServiceNow/VectorGym
+  config_name: null
+  split: test
+  num_samples: 50  # Use -1 for all samples
+  batch_size: 4
+  num_workers: 2
+  rasterize_size: 512
+  render_size: 512
+
+# Default metrics (task-specific metrics are set automatically by validators)
+metrics:
+  L2: true
+  LPIPS: true
+  SSIM: true
+  DinoScore: true
+  CountTokenLength: true
+  ratio_post_processed: true
+  ratio_non_compiling: true
+  GenerationTime: true
+  # These are set automatically per task:
+  CLIPScore: false  # Set to true for text2svg
+  VLMJudge: false   # Set to true by validators per task
+  FID: false
+  FID_clip: false
+  Masked-L2: false
+
