@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)]((https://arxiv.org/abs/2603.29852))
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-ServiceNow/VectorGym-yellow)](https://huggingface.co/datasets/ServiceNow/VectorGym)
 
