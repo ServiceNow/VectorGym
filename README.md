@@ -210,9 +210,17 @@ vector-gym/
 ## 📄 Citation
 
 If you use VectorGym in your research, please cite our work:
-
-Add Citation
-
+```
+@misc{rodriguez2026vectorgymmultitaskbenchmarksvg,
+      title={VectorGym: A Multitask Benchmark for SVG Code Generation, Sketching, and Editing}, 
+      author={Juan Rodriguez and Haotian Zhang and Abhay Puri and Tianyang Zhang and Rishav Pramanik and Meng Lin and Xiaoqing Xie and Marco Terral and Darsh Kaushik and Aly Shariff and Perouz Taslakian and Spandana Gella and Sai Rajeswar and David Vazquez and Christopher Pal and Marco Pedersoli},
+      year={2026},
+      eprint={2603.29852},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2603.29852}, 
+}
+```
 ---
 
 ## 📜 License
